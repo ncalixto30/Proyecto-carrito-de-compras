@@ -1,0 +1,9 @@
+CREATE TABLE ITEMS_CARRITO
+(
+id_item INT PRIMARY KEY,
+id_carrito INT NOT NULL,
+id_producto INT NOT NULL,
+CANTIDAD INT NOT NULL,
+FOREIGN KEY (id_carrito) REFERENCES CARRITOS(id_carrito),
+FOREIGN KEY (id_producto) REFERENCES PRODUCTOS(id_producto)
+);

@@ -1,0 +1,7 @@
+CREATE TABLE CARRITOS
+(
+id_carrito INT PRIMARY KEY,
+id_usuario INT NOT NULL,
+fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (id_usuario) REFERENCES USUARIOS(id_usuario)
+);
